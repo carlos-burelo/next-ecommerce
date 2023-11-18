@@ -105,3 +105,16 @@ a {
     color-scheme: dark;
   }
 }
+button{
+  background-color: #09f;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+input{
+  background-color: rgb(42, 42, 43);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
