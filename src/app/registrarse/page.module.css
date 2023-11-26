@@ -3,3 +3,12 @@
     text-align: center;
     padding-top: 50px;
 }
+.contenedor{
+    display:grid;
+    padding: 2em;
+    gap: 0.5em;
+}
+.main{
+    border-top-right-radius: 120px;
+    border-top-left-radius: 120px;
+}
