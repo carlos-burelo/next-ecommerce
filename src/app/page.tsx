@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <div className={styles.contenedor}>
         <h3 className={styles.subtitulo}>Ven y compra los mejores productos</h3>
-        <Link className={styles.link} href="#">
+        <Link className={styles.link} href="/registrarse">
           <button className={styles.registro}>Registrate</button>
         </Link>
         <Link className={styles.link} href="/iniciar-sesion">
