@@ -2,3 +2,55 @@
   width: 100%;
   height: 100vh;
 }
+
+
+.categories {
+  display: grid;
+  gap: .5em;
+  padding: .75em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  padding: .5em;
+  border-radius: .25em;
+  background-color: var(--secondary);
+  aspect-ratio: 1/1;
+  border-radius: .5em;
+}
+
+.promoLabel {
+  color: var(--text);
+  background-color: var(--accent);
+  padding: 1.5em;
+}
+.promoText {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.filterBar {
+  padding: .75em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filterBar select {
+  padding: .5em;
+  border-radius: .25em;
+  border: none;
+  background-color: var(--secondary);
+  font-weight: bold;
+}
+
+
+.products {
+  display: grid;
+  gap: .5em;
+  padding: .75em;
+  grid-template-columns: 1fr 1fr;
+}

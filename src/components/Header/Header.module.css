@@ -1,0 +1,36 @@
+.header {
+  display: grid;
+  gap: .5em;
+  background-color: var(--text);
+  color: var(--base);
+  padding: .75em;
+}
+
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--text);
+  color: var(--base);
+}
+
+.titlebar h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  background-color: var(--text);
+}
+
+.searchbar input {
+  background-color: var(--base);
+  width: 100%;
+  padding: .5em 1em;
+  border: none;
+  border-radius: .25em;
+  font-size: 1.2em;
+}
+
