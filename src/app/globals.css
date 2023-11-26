@@ -50,3 +50,8 @@ img {
   left: 0;
   z-index: -10;
 }
+
+input {
+  border: none;
+  padding: .5em 1em;
+}
