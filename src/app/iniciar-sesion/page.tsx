@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <img src="/INICIO.jpg" alt="" className="bg" />
       <div className={styles.contenedor}>
         <h1 className={styles.titulo}>Iniciar sesion</h1>
-
         <div className={styles.formulario}>
           <p className={styles.corre}>Correo</p>
           <div className={styles.cont}>
@@ -23,8 +23,9 @@ export default function Home() {
               className={styles.contraseña}
             />
           </div>
-
-          <button className={styles.boton}>Ingresar</button>
+          <div className={styles.bto}>
+            <button className={styles.boton}>Ingresar</button>
+          </div>
         </div>
       </div>
     </main>
