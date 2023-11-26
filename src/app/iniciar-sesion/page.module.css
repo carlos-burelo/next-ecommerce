@@ -1,7 +1,5 @@
 
-.main{
-    background-image: url(/INICIO.jpg);
-}
+
 .contenedor{
     position: absolute;
     bottom: 0;
@@ -10,7 +8,6 @@
     width: 100%;
     height: 50vh;
     background-color: white;
-
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
@@ -33,6 +30,11 @@
     align-items: center;
     justify-content: center;
 }
+.contraseña, .correo{
+   background-color: #F0F1F2;
+   height: 35px;
+   border-radius: 10px;
+}
 .correo, .contraseña{
     
     width: 80%;
@@ -40,10 +42,11 @@
     align-items: center;
     justify-content: center;
     background-color:F0F1F2;
-    color:blue;
+    color:rgb(17, 17, 182);
     margin-bottom: 20px;
     
 }
+/*
 .boton{
     margin-top: 20px;
     text-align: justify;
@@ -58,6 +61,21 @@
     color: black;
     text-decoration: double;
 }
+*/
+.boton{
+    width: 80%;
+ 
+}
+
+.bto{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 .cont, .conta{
     display: flex;
     align-items: center;
