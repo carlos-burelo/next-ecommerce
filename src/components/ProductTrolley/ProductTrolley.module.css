@@ -1,10 +1,21 @@
 .productTrolley {
     display: grid;
     align-items: center;
-    gap: .5em;
-    padding: .25em;
+    
+    margin-top: 5%;
     border-radius: .25em;
     background-color: var(--secondary);
     aspect-ratio: 1/1;
     border-radius: .5em;
+    width: 90%;
+    
+    
+   
+  }
+ 
+
+  .imagen{
+    
+    width: 96px;
+    height: 110px;
   }
