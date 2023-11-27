@@ -1,0 +1,20 @@
+.seccion{
+    display: grid;
+    place-items: center;
+}
+.orden{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: .5em;
+}
+
+.bto{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 90%;
+    font-weight: bold;
+}

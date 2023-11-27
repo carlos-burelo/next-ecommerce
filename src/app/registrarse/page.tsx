@@ -10,7 +10,7 @@ export default function home() {
         <input type="text" placeholder="Nombre" />
         <input type="email" placeholder="Correo" />
         <input type="password" name="Pass" placeholder="Contraseña" id="" />
-        <button>Crear</button>
+        <button className={styles.boton}>Crear</button>
       </div>
     </main>
   );
