@@ -1,0 +1,49 @@
+.titulo{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: .5em;
+}
+span{
+    font-weight: bold;
+
+}
+img{
+    width: 150px;
+    
+}
+.contenedor{
+    display: grid;
+    margin: 1em;
+    
+}
+.textIm, img{
+
+    padding: 1em;
+}
+
+.orden{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: .5em;
+}
+
+.bto{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 90%;
+    font-weight: bold;
+}
+.color{
+    
+    margin-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+.colorInput{
+    width: 40%;
+    margin-left: 1.5em;
+}
