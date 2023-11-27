@@ -1,84 +1,31 @@
 
 
-.contenedor{
-    position: absolute;
-    bottom: 0;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50vh;
-    background-color: white;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
 
 .titulo{
-    text-align: justify;
+    color: rgb(228, 228, 228);
     text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 40px;
-   
-}
-.corre, .contra{
-    color: black;
-    font-size: 20px;
-    padding-bottom: 10px;
-    padding-left: 10%;
-}
-.formulario{
-   
-    align-items: center;
-    justify-content: center;
-}
-.contraseña, .correo{
-   background-color: #F0F1F2;
-   height: 35px;
-   border-radius: 10px;
-}
-.correo, .contraseña{
-    
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:F0F1F2;
-    color:rgb(17, 17, 182);
-    margin-bottom: 20px;
-    
-}
-/*
-.boton{
-    margin-top: 20px;
-    text-align: justify;
-    justify-content: center;
-    display: flex;
-    bottom: 30px;
-    width: 80%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-    color: black;
-    text-decoration: double;
-}
-*/
-.boton{
-    width: 80%;
- 
+    padding-top: 50px;
 }
 
-.bto{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.contenedor{
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    padding: 2em;
+    gap: 1em;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+}
+.contenedor input{
+    padding: 1em;
 }
 
-
-.cont, .conta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.tit1{
+    text-align: center;
+    padding-top: 1em;
+    font-weight: 40px;
 }
