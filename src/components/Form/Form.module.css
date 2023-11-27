@@ -1,0 +1,18 @@
+.cajaInfo, .cajaInput{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cajaInput input{
+    width: 40%;
+}
+
+
+.Info1, .Info2{
+    display: block;
+    padding-bottom: .5em;
+}
+.contenedor{
+    padding-top: 1em;
+}
