@@ -1,16 +1,15 @@
-import styles from "./ProductCard.module.css";
+import styles from './ProductCard.module.css'
 
-export default function ProductCard() {
+export default function ProductCard(producto: Producto) {
   return (
     <div className={styles.productCard}>
-      <div className={styles.productImage}></div>
+      <div className={styles.productImageContainer}>🖼️</div>
       <div className={styles.productInfo}>
-        <h3 className={styles.productName}>Nombre del producto</h3>
+        <h3 className={styles.productName}>{producto.nombre}</h3>
         <p className={styles.productShop}>
-          <span className={styles.productPrice}>$9.99 MXN</span>
-          <button className={styles.add}>➕</button>
+          <span className={styles.productPrice}>{producto.costo} MXN</span>
         </p>
       </div>
     </div>
-  );
+  )
 }

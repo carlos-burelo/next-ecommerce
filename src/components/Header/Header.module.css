@@ -4,6 +4,7 @@
   background-color: var(--text);
   color: var(--base);
   padding: .75em;
+  width: 100%;
 }
 
 .titlebar {
@@ -12,6 +13,7 @@
   align-items: center;
   background-color: var(--text);
   color: var(--base);
+  width: 100%;
 }
 
 .titlebar h1 {
@@ -23,6 +25,7 @@
   display: flex;
   align-items: center;
   background-color: var(--text);
+  width: 100%;
 }
 
 .searchbar input {

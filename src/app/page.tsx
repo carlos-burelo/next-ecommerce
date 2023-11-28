@@ -1,8 +1,11 @@
-import Header from "@/components/Header";
-import styles from "./page.module.css";
-import ProductCard from "@/components/ProductCard";
+import Header from '@/components/Header'
+import styles from './page.module.css'
+import ProductCard from '@/components/ProductCard'
+import { DB } from '@/lib/mysql'
 
-export default function Home() {
+export default async function Home() {
+  const products = await DB.getProducts()
+
   return (
     <main className={styles.main}>
       <Header />
@@ -16,24 +19,18 @@ export default function Home() {
         </div>
         <div className={styles.filterBar}>
           <h3 className={styles.label}>Filtrar por</h3>
-          <select name="filter" id="filter">
-            <option value="price">Mas relevantes</option>
-            <option value="price">Mayor precio</option>
-            <option value="price">Menor precio </option>
+          <select name='filter' id='filter'>
+            <option value='price'>Mas relevantes</option>
+            <option value='price'>Mayor precio</option>
+            <option value='price'>Menor precio </option>
           </select>
         </div>
         <div className={styles.products}>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {products.map(product => (
+            <ProductCard {...product} key={product.id_producto} />
+          ))}
         </div>
       </div>
     </main>
-  );
+  )
 }
