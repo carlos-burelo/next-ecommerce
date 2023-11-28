@@ -1,9 +1,9 @@
 .productCard {
+  height: 100%;
   display: grid;
-  align-items: center;
+  place-items: center;
   gap: .5em;
   padding: .5em;
-  border-radius: .25em;
   background-color: var(--secondary);
   aspect-ratio: 1/1;
   border-radius: .5em;
@@ -12,15 +12,8 @@
   position: relative;
 }
 
-.productImageContainer {
-  display: grid;
-  place-items: center;
-}
-
 .productImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 .productName {
@@ -28,6 +21,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
+  white-space: nowrap;
+  background-color: var(--secondary);
 }
 
 .productShop {

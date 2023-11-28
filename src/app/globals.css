@@ -9,11 +9,6 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  width: 100dvw;
-  height: 100dvh;
-}
-
 :root {
   --primary: #C3E703;
   --primary-hover: #96ae0c;
@@ -40,8 +35,8 @@ button:hover {
 }
 
 img {
-  width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 
