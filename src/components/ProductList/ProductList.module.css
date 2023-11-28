@@ -35,11 +35,18 @@
 
   .bton{
     display: grid;
-    right: 0;
-    padding: 0;
+ 
+    
     box-sizing: border-box;
     height: 50px;
+    padding-top: .5em;
+    padding-right: .5em;
   }
   .baton{
     font-size: 15px;
+    
+  }
+  .canti{
+    padding-left: .5em;
+    font-weight: bold;
   }

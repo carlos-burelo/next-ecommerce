@@ -8,10 +8,8 @@ export default function ProductList() {
       </div>
       <div className={styles.CajaInfo}>
         <h3 className={styles.titulo}>Mochila</h3>
-        <p>
-          Marca Jansport estilo urbano
-          <span>Cantidad</span>
-        </p>
+        <p>Marca Jansport estilo urbano</p>
+        <span className={styles.canti}>Cantidad</span>
         <div className={styles.caja}>
           <p>1</p>
         </div>
