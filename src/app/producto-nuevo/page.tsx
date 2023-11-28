@@ -11,7 +11,7 @@ export default function Home() {
       </div>
       <section className={styles.contenedor}>
         <span>Nombre</span>
-        <input type="text" placeholder="Nombre" />
+        <input type="text" />
         <Form Info1="Categoria" Info2="Marca" />
         <Form Info1="Precio" Info2="Cantidad" />
         <span className={styles.color}>Color</span>

@@ -1,13 +1,46 @@
 .tit2{
-    color: rgb(228, 228, 228);
+    color: black;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 13em;
+    font-size: 36px;
+    margin-bottom: .5em;
 }
 main{
     position:absolute;
+   
+}
+
+.titulo{
+    margin-top:.5em;
+    text-align: center;
+   
+}
+
+span{
+    margin: 2em;
+    font-size: 10px;
+    font-weight: bold;
+    
+  
+}
+
+.Poli1{
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.Poli2, .Poli1{
+    padding-bottom: 40px;
     
 }
-.boton{
-    bottom: 0;
-
+.boton1, .boton2{
+    margin-top: 1em;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 3em;
+    font-weight: bold;
+    font-size: 20px;
+}
+.boton2{
+    margin-bottom: 4em;
 }

@@ -1,0 +1,45 @@
+.productTrolley {
+    display: flex;
+    margin-top: 5%;
+    border-radius: .25em;
+    background-color: var(--secondary);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+ .caja{
+  display: grid;
+  place-content: center;
+  width:25px ;
+  height: 25px;
+  background-color: var(--secondary);
+  border-color: black;
+  border-style: double;
+ 
+ }
+ .titulo, p, .caja{
+  margin: .5em;
+
+ }
+.cajaimagen{
+
+  display: grid;
+  place-items: center;
+}
+  .imagen{
+    
+    width: 98px;
+    height: 100px;
+  }
+
+  .bton{
+    display: grid;
+    right: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 50px;
+  }
+  .baton{
+    font-size: 15px;
+  }
