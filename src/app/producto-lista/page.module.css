@@ -1,0 +1,26 @@
+.header{
+
+background-color: black;
+height: 4em;
+}
+.tituloHead{
+    padding-top: 1em;
+    padding-left: .5em;
+    color: white;
+}
+
+.titulo{
+    margin-top: 1em;
+    text-align: center;
+}
+.searchbar{
+    
+    margin-top: 1em;
+   display: grid;
+   place-items: center;
+}
+.buscar{
+    height: 3em;
+    border-radius: 10px;
+    width: 90%;
+}

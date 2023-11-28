@@ -3,3 +3,24 @@
     text-align: center;
     padding-top: 50px;
 }
+.contenedor{
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    padding: 2em;
+    gap: 1em;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+}
+.contenedor input{
+    padding: 1em;
+}
+.tit1{
+    text-align: center;
+    padding-top: 1em;
+    font-weight: 40px;
+}
