@@ -18,6 +18,10 @@ html {
   --base: #ffffff;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
 
 button {
   padding: .75em 1.5em;

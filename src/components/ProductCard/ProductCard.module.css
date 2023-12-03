@@ -17,12 +17,14 @@
   object-position: center;
 }
 .productName {
+  text-align: start;
   font-size: .9em;
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
   white-space: nowrap;
   background-color: var(--secondary);
+  
 }
 
 .productShop {
