@@ -16,8 +16,9 @@ export declare global {
     id_disponibilidad: number
     id_clasificacion: number
     categoria: string
-    calificacion: number
+    marca: string
     url_imagen: string
+    cantidad: number
   }
 
   interface Orden {

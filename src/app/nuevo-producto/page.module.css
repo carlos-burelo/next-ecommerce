@@ -47,3 +47,23 @@ img{
     width: 40%;
     margin-left: 1.5em;
 }
+
+
+.cajaInfo, .cajaInput{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cajaInput input{
+    width: 40%;
+}
+
+
+.Info1, .Info2{
+    display: block;
+    padding-bottom: .5em;
+}
+.contenedor2{
+    padding-top: 1em;
+}

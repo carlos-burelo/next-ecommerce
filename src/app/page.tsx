@@ -20,7 +20,7 @@ export default async function Home() {
         <div className={styles.filterBar}>
           <h3 className={styles.label}>Filtrar por</h3>
           <select name='filter' id='filter'>
-            <option value='price'>Mas relevantes</option>
+            <option value='price'>Más relevantes</option>
             <option value='price'>Mayor precio</option>
             <option value='price'>Menor precio </option>
           </select>

@@ -21,4 +21,36 @@ export class DB {
     const products = await ConnectionPool.query(QUERY)
     return products as Producto[]
   }
+
+  static async insertProduct({nombre, color, costo, categoria, marca, cantidad, url_imagen}: Partial<Producto>){
+   try {
+    const QUERY = `INSERT INTO Producto (nombre, color, costo, categoria, marca, cantidad, url_imagen) values (?,?,?,?,?,?,?)`
+    await ConnectionPool.query(QUERY,[nombre, color, costo, categoria, marca, cantidad, url_imagen] )
+    return true
+   } catch (error) {
+    return false
+   }
+  }
+
+  static async getProductById(id: number){
+    const QUERY = `SELECT * FROM producto where id_producto=?`
+    const productos = await ConnectionPool.query(QUERY, [id]) as any
+    return productos[0] as Producto 
+  }
+  
+
+  static async updateProduct({id_producto ,nombre, color, costo, categoria, marca, cantidad, url_imagen}: Partial<Producto>){
+    try {
+      const QUERY = `UPDATE Producto 
+      SET nombre = ?, color = ?, costo = ?, categoria = ?, marca = ?, cantidad = ?, url_imagen = ?
+      WHERE id_producto = ?`;
+     await ConnectionPool.query(QUERY,[nombre, color, costo, categoria, marca, cantidad, url_imagen, id_producto] )
+     return true
+    } catch (error) {
+     return false
+    }
+   }
+
+
 }
+
