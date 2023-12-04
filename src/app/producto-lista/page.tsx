@@ -1,12 +1,17 @@
-import Header from "@/components/Header";
-import styles from "./page.module.css";
-import ProductList from "@/components/ProductList";
+import Header from '@/components/Header'
+import styles from './page.module.css'
+import ProductList from '@/components/ProductList'
+import { DB } from '@/lib/mysql'
+import { useState } from 'react'
+import Producto from '../producto/[id]/page'
 
 interface HeaderProps {
-  hideSearchBar?: boolean;
+  hideSearchBar?: boolean
 }
 
-export default function Home({ hideSearchBar = false }) {
+export default async function Home({ hideSearchBar = false }) {
+  const products = await DB.getProducts()
+
   return (
     <main>
       <header className={styles.header}>
@@ -17,13 +22,17 @@ export default function Home({ hideSearchBar = false }) {
         <div className={styles.searchbar}>
           <input
             className={styles.buscar}
-            type="search"
-            placeholder="Buscar produtos, marcas y mucho más..."
+            type='search'
+            placeholder='Buscar produtos, marcas y mucho más...'
           />
         </div>
       )}
       <section className={styles.seccion}></section>
-      <ProductList />
+      <div className={styles.products}>
+        {products.map(product => (
+          <ProductList {...product} key={product.id_producto} />
+        ))}
+      </div>
     </main>
-  );
+  )
 }

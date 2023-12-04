@@ -3,6 +3,7 @@ export declare global {
     id_usuario: number
     nombre: string
     correo: string
+    contraseña: string
   }
   interface TipoUsuario {
     id_tipo_usuario: number

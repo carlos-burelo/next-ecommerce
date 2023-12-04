@@ -1,22 +1,24 @@
-import styles from "./ProductList.module.css";
+import styles from './ProductList.module.css'
 
-export default function ProductList() {
+export default function ProductList(producto: Producto) {
   return (
     <div className={styles.productTrolley}>
       <div className={styles.cajaimagen}>
-        <img src="/Jansport.png" alt="" className={styles.imagen} />
+        <img src={producto.url_imagen} alt='' className={styles.imagen} />
       </div>
       <div className={styles.CajaInfo}>
-        <h3 className={styles.titulo}>Mochila</h3>
-        <p>Marca Jansport estilo urbano</p>
-        <span className={styles.canti}>Cantidad</span>
+        <h3 className={styles.titulo}>{producto.nombre}</h3>
+        <p>
+          {producto.marca} {producto.color}
+        </p>
+
         <div className={styles.caja}>
-          <p>1</p>
+          <p>{producto.cantidad}</p>
         </div>
       </div>
       <div className={styles.bton}>
         <button className={styles.baton}>🗑️</button>
       </div>
     </div>
-  );
+  )
 }

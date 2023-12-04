@@ -51,6 +51,15 @@ export class DB {
     }
    }
 
+      static async insertUser({nombre, correo, contraseña}: Partial<Usuario>){
+       try {
+        const QUERY = `INSERT INTO Usuario (nombre, correo, contraseña) values (?,?,?)`
+        await ConnectionPool.query(QUERY,[nombre, correo, contraseña])
+        return true
+       } catch (error) {
+        return false
+       }
+      }
 
 }
 

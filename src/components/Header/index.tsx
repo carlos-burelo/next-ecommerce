@@ -1,7 +1,7 @@
-import styles from "./Header.module.css";
+import styles from './Header.module.css'
 
 interface HeaderProps {
-  hideSearchBar?: boolean;
+  hideSearchBar?: boolean
 }
 
 export default function Header({ hideSearchBar = false }) {
@@ -14,11 +14,11 @@ export default function Header({ hideSearchBar = false }) {
       {!hideSearchBar && (
         <div className={styles.searchbar}>
           <input
-            type="search"
-            placeholder="Buscar produtos, marcas y mucho más..."
+            type='search'
+            placeholder='Buscar produtos, marcas y mucho más...'
           />
         </div>
       )}
     </header>
-  );
+  )
 }
