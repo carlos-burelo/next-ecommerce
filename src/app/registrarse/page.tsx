@@ -1,5 +1,6 @@
 import { DB } from '@/lib/mysql'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 export default function home() {
   // prettier-ignore
@@ -20,6 +21,9 @@ export default function home() {
       <h1 className={styles.tit1}>PapelApp</h1>
       <form action={procesarForm} className={styles.contenedor}>
         <h1>Crear cuenta</h1>
+        <Link href={'/iniciar-sesion'}>
+          <span className={styles.sesion}>Ya cuento con una cuenta</span>
+        </Link>
         <input type='text' placeholder='Nombre' name='nombre' />
         <input type='email' placeholder='Correo' name='correo' />
         <input
@@ -28,9 +32,11 @@ export default function home() {
           placeholder='Contraseña'
           id=''
         />
-        <button type='submit' className={styles.boton}>
-          Crear
-        </button>
+        <Link href={'/carrito'}>
+          <button type='submit' className={styles.boton}>
+            Crear
+          </button>
+        </Link>
       </form>
     </main>
   )

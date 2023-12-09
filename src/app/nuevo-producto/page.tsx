@@ -25,7 +25,7 @@ export default function Home() {
     <main className={styles.main}>
       <h1 className={styles.titulo}>Nuevo Producto</h1>
       <div className={styles.contendeorM}>
-        <img src='/Jansport.png' alt='' />
+        <img src='/Papeleria.jpg' alt='' />
       </div>
       <form action={procesarForm} className={styles.contenedor}>
         <span className={styles.textIm}>Imagen</span>

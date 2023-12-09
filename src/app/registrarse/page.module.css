@@ -24,3 +24,23 @@
     padding-top: 1em;
     font-weight: 40px;
 }
+
+
+.sesion {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+  }
+  
+  .sesion:hover {
+    color: #6f00ff; 
+  }
+  
+  .sesion:active {
+    color: rgb(0, 179, 255); 
+  }
+  .boton{
+    width: 100%;
+    
+  }
